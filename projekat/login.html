@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!---Coding By CoderGirl | www.codinglabweb.com--->
+<html lang="en">
+  <head>
+    <!-- Favicon -->
+    <link rel="icon" href="img/core-img/pancake.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Copy 'n' Pastries - Online Cookbook | Login</title>
+    <!---Custom CSS File--->
+    <link rel="stylesheet" href="style.css" />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".button").click(function () {
+          window.location.href = "account.html";
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="panel">
+      <input type="checkbox" id="check" />
+      <div class="login-form form-content">
+        <header>Log in</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your email" />
+          <input type="password" placeholder="Enter your password" />
+          <input type="button" class="button" value="Log in" />
+        </form>
+        <div class="signup-section">
+          <span class="signup-section">
+            Don't have an account?
+            <label for="check">Sign up</label>
+          </span>
+        </div>
+      </div>
+      <div class="registration-form form-content">
+        <header>Sign up</header>
+        <form action="#">
+          <input type="text" placeholder="Enter your email" />
+          <input type="password" placeholder="Create a password" />
+          <input type="password" placeholder="Confirm your password" />
+          <input type="button" class="button" value="Sign up" />
+        </form>
+        <div class="signup-section">
+          <span class="signup-section">
+            Already have an account?
+            <label for="check">Log in</label>
+          </span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
