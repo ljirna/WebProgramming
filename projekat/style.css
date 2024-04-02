@@ -589,7 +589,7 @@ textarea:focus {
   }
 }
 .header-area .delicious-main-menu .classy-nav-container {
-  background-color: transparent;
+  background-color: white;
 }
 .header-area .delicious-main-menu .classy-navbar {
   height: 145px;
@@ -1862,4 +1862,9 @@ textarea:focus {
 }
 .signup-section label:hover {
   text-decoration: underline;
+}
+.classy-navbar {
+  position: relative;
+  background-color: white;
+  z-index: 100; /* Or whatever value you want */
 }

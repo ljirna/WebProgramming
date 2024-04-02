@@ -1,0 +1,60 @@
+{
+  "healthy-recipes": [
+    {
+      "date": "October 17, 2022",
+      "name": "Chia Pudding",
+      "prep": "15 mins",
+      "cook": "0 mins",
+      "yields": "2 Servings",
+      "stars": "4",
+      "image": "img/bg-img/ciija.jpg",
+      "instructions": [
+        "Add your milk of choice to a jar and sprinkle in the chia seed. After stirring the milk and seeds together, drizzle in honey or sweetener of choice. Stir again until all the chia seeds have been distributed evenly into the milk. There shouldn’t be any clumps left. Wait about 10 minutes and give it one more last stir. Cover and refrigerate the pudding for at least 2 hours or overnight."
+      ],
+      "ingredients": [
+        "Chia seeds",
+        " Milk of choice",
+        " Honey or sweetener of choice"
+      ]
+    },
+    {
+      "date": "December 07, 2021",
+      "name": "Avocado Chocolate Mousse",
+      "prep": "15 mins",
+      "cook": "0 mins",
+      "yields": "4 Servings",
+      "stars": "5",
+      "image": "img/bg-img/avocadoo.jpg",
+      "instructions": [
+        "Melt the chocolate. Combine everything in your food processor and blend until smooth. Spoon into dessert bowls topped with desired toppings. ENJOY!"
+      ],
+      "ingredients": [
+        "Flesh of 2 ripe avocados",
+        " 1/4 cup regular cocoa powder",
+        " 1/4 cup dutch cocoa OR melted chocolate chips",
+        " 3-4 tbsp milk of choice",
+        " 1/2 tsp pure vanilla extract",
+        " 1/8 tsp salt"
+      ]
+    },
+    {
+      "date": "February 13, 2023",
+      "name": "Sweet Potato Brownies",
+      "prep": "25 mins",
+      "cook": "40 mins",
+      "yields": "12 Servings",
+      "stars": "2",
+      "image": "img/bg-img/brownie.jpg",
+      "instructions": [
+        "To make sweet potato purée, halve sweet potato and brush the cut sides with oil. Add to a parchment-lined baking sheet. Bake at 190 C for 25-30 minutes or until tender to the touch. Move to one side of pan and wrap the parchment paper over top to steam. Let steam for 5 minutes. Then peel away skin and mash in a mixing bowl. Set aside. To a large mixing bowl, add sweet potato purée, maple syrup, almond butter, vanilla extract, and avocado oil and stir to combine. Add cacao powder, sea salt, and baking powder and stir to combine. Then add oat flour and stir until a thick, scoopable batter is achieved. Transfer batter to your parchment-lined baking dish and spread into an even layer using a spoon or rubber spatula. Then top with pecans and chocolate chips. Bake on the center rack for 28-32 minutes. The brownie edges should appear slightly dry and a toothpick inserted into the center should come out mostly clean. Remove from oven and let cool in the pan for 30 minutes – 1 hour. Lift out of pan and slice. Enjoy warm or room temperature. Store leftovers covered at room temperature up to 3 days, in the refrigerator up to 5-7 days, or in the freezer up to 1 month. These brownies are delicious on their own but elevated with a scoop of dairy-free ice cream."
+      ],
+      "ingredients": [
+        " 1 cup sweet potato purée",
+        " 2/3 cup maple syrup",
+        " 1/2 cup almond butter or peanut butter",
+        " 1 tsp pure vanilla extract",
+        " 1/2 cup chopped raw pecans (or sub walnuts, but we liked pecans better)"
+      ]
+    }
+  ]
+}

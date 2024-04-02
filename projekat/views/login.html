@@ -1,0 +1,62 @@
+<!-- ##### About Area Start ##### -->
+<section class="about-area section-padding-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div>
+          <input type="checkbox" id="check" />
+          <div class="login-form form-content">
+            <header>Log in</header>
+            <form id="loginForm" action="#">
+              <input
+                id="emailInput"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <input
+                id="passwordInput"
+                type="password"
+                placeholder="Enter your password"
+              />
+              <input
+                type="submit"
+                id="loginButton"
+                class="button"
+                value="Log in"
+              />
+            </form>
+            <div class="signup-section">
+              <span class="signup-section">
+                Don't have an account?
+                <label for="check"><a href="#signup">Sign up</a></label>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document
+    .getElementById("loginForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var email = document.getElementById("emailInput").value;
+      var password = document.getElementById("passwordInput").value;
+      if (!email.trim()) {
+        alert("Email is required");
+        return;
+      }
+      if (!password.trim()) {
+        alert("Password is required");
+        return;
+      }
+      // If email and password are not empty, show success alert
+      alert("Login successful");
+
+      console.log("Email: " + email);
+      console.log("Password: " + password);
+    });
+</script>

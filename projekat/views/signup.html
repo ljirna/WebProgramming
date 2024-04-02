@@ -1,0 +1,71 @@
+<!-- ##### About Area Start ##### -->
+<section class="about-area section-padding-80">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <div>
+          <div class="registration-form form-content">
+            <header>Sign up</header>
+            <form action="#" id="signupForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                id="emailInput"
+              />
+              <input
+                type="password"
+                placeholder="Create a password"
+                id="passwordInput"
+              />
+              <input
+                type="password"
+                placeholder="Confirm your password"
+                id="passwordInput2"
+              />
+              <input type="submit" class="button" value="Sign up" />
+            </form>
+            <div class="signup-section">
+              <span class="signup-section">
+                Already have an account?
+                <label for="check"><a href="#login">Log in</a></label>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  document
+    .getElementById("signupForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      var email = document.getElementById("emailInput").value;
+      var password = document.getElementById("passwordInput").value;
+      var password2 = document.getElementById("passwordInput2").value;
+      if (!email.trim()) {
+        alert("Email is required");
+        return;
+      }
+      if (!password.trim()) {
+        alert("Password is required");
+        return;
+      }
+      if (!password2.trim()) {
+        alert("Confirmation password is required");
+        return;
+      }
+      if (password !== password2) {
+        alert("Passwords do not match");
+        return;
+      }
+      // If email and passwords are not empty and passwords match, show success alert
+      alert("Signup successful");
+
+      console.log("Email: " + email);
+      console.log("Password: " + password);
+      console.log("Confirmation Password: " + password2);
+    });
+</script>

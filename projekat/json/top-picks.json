@@ -1,0 +1,34 @@
+{
+  "recipes": [
+    {
+      "name": "Hassle-free Cinnamon Buns",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/cinnamon-rolls-7583282_640 (1).jpg",
+      "ratings": 3
+    },
+    {
+      "name": "Fast Belgian Waffle Recipe",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/valfi.jpg",
+      "ratings": 5
+    },
+    {
+      "name": "Everyday Pancake Recipe",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/pancakes (1).jpg",
+      "ratings": 2
+    },
+    {
+      "name": "French Pain au Chocolat",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/pain.jpg",
+      "ratings": 5
+    },
+    {
+      "name": "Homemade Lava Cake",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/lavacake.jpg",
+      "ratings": 3
+    },
+    {
+      "name": "Cheat Day Banana Bread",
+      "image": "/Web-project/WebProgramming/projekat/img/bg-img/banana.jpg",
+      "ratings": 5
+    }
+  ]
+}
