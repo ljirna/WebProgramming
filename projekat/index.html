@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -32,7 +33,7 @@
                   <!-- Responsive Navbar Start -->                  
                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="#home">
-                      <img src="img/core-img/start logo.png" alt=""/>
+                      <img src="img/core-img/start_logo-removebg-preview.png" alt=""/>
                     </a>
                     <button id="navbar-button" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -42,14 +43,15 @@
                         <li class="nav-item active">
                           <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                         </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                          </a>
+                          <div class="dropdown-menu" id="categories">
+                          </div>
+                        </li>
                         <li class="nav-item">
                           <a class="nav-link" href="#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#receipe-post">Recipes</a></li>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link disabled" href="#healthy-recipes">Healthy Recipes</a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link disabled" href="#contact">Contact</a></li>
@@ -176,7 +178,7 @@
               <!-- Footer Logo -->
               <div class="footer-logo">
                 <a href="index.html"
-                  ><img src="img/core-img/start logo.png" alt=""
+                  ><img src="img/core-img/start_logo-removebg-preview.png" alt=""
                 /></a>
               </div>
             </div>
@@ -191,41 +193,24 @@
 <!-- ##### All Javascript Files ##### -->
 <!-- jQuery-2.2.4 js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+
 
 <!-- Popper js -->
 <script src="js/bootstrap/popper.min.js"></script>
 <!-- Bootstrap js -->
 <script src="js/bootstrap/bootstrap.min.js"></script>
 <script src="js/jquery.spapp.min.js"></script>
+<script src="js/utils/constants.js"></script>
+<script src="js/utils/rest-client.js"></script>
+<script src="js/script.js"></script>
 
-<script>
-  jQuery(document).ready(function($) {
-      var app = $.spapp({
-          defaultView: "#home",
-          templateDir: "./views/"
-      });
-      app.run();
-  });
-</script>
 <script>
   document.getElementById('navbar-button').addEventListener('click', function() {
       var navbar = document.getElementById('navbarNav');
       navbar.classList.toggle('collapse');
   });
 </script>
-<script>
-  function postComment() {
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var subject = document.getElementById('subject').value;
-      var message = document.getElementById('message').value;
 
-      console.log('Form submitted with the following data:');
-      console.log('Name:', name);
-      console.log('Email:', email);
-      console.log('Subject:', subject);
-      console.log('Message:', message);
-  }
-</script>
   </body>
   </html>
