@@ -25,3 +25,19 @@ main#spapp > section:target {
 main#spapp > section:target ~ * {
   display: none;
 }
+
+#pageContent {
+  margin-bottom: 25px;
+}
+
+.quote-subscribe-adds {
+  margin-top: 25px;
+}
+
+#comments-container {
+  margin-top: 25px;
+}
+
+#comments-container .card {
+  margin-bottom: 15px;
+}

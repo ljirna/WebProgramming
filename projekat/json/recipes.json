@@ -1,5 +1,5 @@
 {
-  "receipe-post": [
+  "receipes": [
     {
       "date": "September 05, 2020",
       "name": "Croissants",
@@ -63,7 +63,7 @@
         " 1 egg",
         " Vanilla extract",
         " Dark chocolate",
-        " Chopped pistachios, to decorate"
+        " Chopped pistachios for decoration"
       ]
     },
     {
@@ -80,8 +80,6 @@
       "ingredients": [
         "2 ¾ cups all-purpose flour",
         " 1 teaspoon baking soda",
-        " 1 cup butter, softened",
-        " 1 ½ cups white sugar",
         " 1 ½ cups white sugar",
         " 1 teaspoon vanilla extract",
         " Sugar to coat them in"
@@ -105,7 +103,6 @@
         " 200ml whole milk",
         " 120g butter, at room temperature plus 40g butter, melted",
         " 50g caster sugar",
-        " 80g caster sugar",
         " 1 tsp ground cinnamon"
       ]
     },
@@ -138,14 +135,19 @@
       "cook": "20 mins",
       "yields": "18 Servings",
       "stars": "3",
-      "image": "img/bg-img/Hafiz-Mustafa-Baklavajpg",
+      "image": "img/bg-img/Hafiz-Mustafa-Baklava.jpg",
       "instructions1": [
         "Place the sugar and water in a saucepan and heat stove-top, stirring occasionally, until sugar dissolves. Add the honey, orange extract, and whole cloves (cloves are optional here); stir to mix. Bring to a boil, then lower heat and let simmer for about 25 minutes. Remove syrup from heat. Add lemon juice. Remove the whole cloves and let the syrup cool completely (it will thicken a little bit). In the bowl of a food processor fitted with a blade, add the pistachios, walnut, and hazelnuts. Pulse a few times to chop. Transfer to a large mixing bowl and add sugar, cinnamon, and ground cloves. Mix well to combine. Carefully unroll the thawed phyllo pastry and place the sheets in between two clean kitchen towels. This will help keep the phyllo from breaking while you work. Prepare a 9”x 13”x 2” baking pan. Brush the interior of the baking pan with some of the melted butter. To assemble the baklava, take one sheet of phyllo and place it in the pan (for this size pan, I typically fold my phyllo sheet in half, and it fits perfectly. You can also do a bit of trimming using a pair of kitchen shears). Brush the top of the phyllo sheet with the melted butter. Repeat this process a few more times until you have used up about ⅓ of the phyllo pastry, each layer being brushed with the melted butter. Continue assembling the baklava, one sheet of phyllo pastry at a time using another ⅓ of the phyllo. Again, brush each layer with a bit of the melted butter. Distribute the remaining ½ of the nut mixture evenly over the top layer of phyllo. Finish the remaining ⅓ of the phyllo pastry following the same process, laying one folded sheet at a time and brushing each layer with melted butter. Brush the very top sheet of phyllo with butter. Using a good sharp knife, cut the pastry into diamond shaped pieces (anywhere from 24 to 36 pieces) about ½-inch deep."
       ],
       "ingredients": [
-        "Phyllo pastry - find frozen phyllo dough in the freezer section next to things like pie crust.",
-        " Pistachios, walnuts, hazelnut, sugar, ground cinnamon, pinch of ground cloves.",
-        " Honey syrup- water, sugar, honey, and lemon juice"
+        "Phyllo pastry",
+        " Chopped pistachios for decoration",
+        " Walnuts",
+        " Hazelnut",
+        " Sugar",
+        " Ground cinnamon",
+        " Pinch of ground cloves",
+        " Honey syrup - water, sugar, honey, and lemon juice"
       ]
     }
   ]

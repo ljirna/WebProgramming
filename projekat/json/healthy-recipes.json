@@ -1,5 +1,5 @@
 {
-  "healthy-recipes": [
+  "receipes": [
     {
       "date": "October 17, 2022",
       "name": "Chia Pudding",
@@ -24,7 +24,7 @@
       "cook": "0 mins",
       "yields": "4 Servings",
       "stars": "5",
-      "image": "img/bg-img/avocadoo.jpg",
+      "image": "img/bg-img/avocadopudding.jpg",
       "instructions": [
         "Melt the chocolate. Combine everything in your food processor and blend until smooth. Spoon into dessert bowls topped with desired toppings. ENJOY!"
       ],

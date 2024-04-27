@@ -14,17 +14,17 @@
           <h2>Contact</h2>
         </div>
       </div>
+
     </div>
   </div>
 
 </div>
-<br>
-</br>
+
 <!-- ##### Breadcumb Area End ##### -->
 
       <!-- Contact Text -->
       <div class="col-6 col-lg-5">
-        <div class="contact-text">
+        <div class="contact-text" style="margin-left: 35px; margin-top: 20px;">
           <p>
             We'd love to hear from you! Whether you have a question about one of
             our recipes, want to collaborate with us, or simply want to say
@@ -36,39 +36,33 @@
           </p>
         </div>
         <!-- Single Contact Information -->
-        <div class="single-contact-information mb-30">
+        <div class="single-contact-information mb-30" style="margin-left: 35px;">
           <h6>Address:</h6>
           <p>123 Main Street, Springfield</p>
         </div>
         <!-- Single Contact Information -->
-        <div class="single-contact-information mb-30">
+        <div class="single-contact-information mb-30" style="margin-left: 35px;">
           <h6>Phone:</h6>
           <p>(555) 987-6543 <br />(555) 987-6543</p>
         </div>
         <!-- Single Contact Information -->
-        <div class="single-contact-information mb-30">
+        <div class="single-contact-information mb-30" style="margin-left: 35px;">
           <h6>Email:</h6>
           <p>contact@copynpastries.com</p>
         </div>
       </div>
       <!-- Newsletter Area -->
-      <div class="col-12 col-lg-5">
+      <div class="col-12 col-lg-12" >
         <div
           class="newsletter-form bg-img bg-overlay"
-          style="background-image: url(img/bg-img/pozadina.jpg)"
-        >
-          <form
-            action="#"
-            method="post"
-            onsubmit="event.preventDefault(); submitForm();"
-          >
+          style="background-image: url(img/bg-img/pozadina.jpg)">
+          <form id="newsletter-form">
             <input
               type="email"
               id="email"
               name="email"
               placeholder="Enter your email"
-              required
-            />
+              required/>
             <button type="submit" class="btn delicious-btn w-100">
               Subscribe
             </button>
@@ -84,14 +78,7 @@
           </p>
         </div>
       </div>
-    </div>
-  </div>
+
 
 </div>
-<script>
-  function submitForm() {
-    const emailInput = document.getElementById("email");
-    console.log("Email:", emailInput.value);
-  }
-</script>
 <!-- ##### Contact Information Area End ##### -->
