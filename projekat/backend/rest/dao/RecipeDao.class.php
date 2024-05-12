@@ -8,7 +8,8 @@ class RecipeDao extends BaseDao {
     }
 
     public function get_recipes() {
-        $query = "SELECT recipes.*, GROUP_CONCAT(ingredients.name SEPARATOR ', ') as recipe_ingredients
+        $query = "SELECT recipes.*, 
+        GROUP_CONCAT(ingredients.name SEPARATOR ', ') as recipe_ingredients
         FROM recipes 
         LEFT JOIN ingredients ON recipes.id = ingredients.recipe_id
         GROUP BY recipes.id";
@@ -22,5 +23,9 @@ class RecipeDao extends BaseDao {
         WHERE recipes.category_id = ?
         GROUP BY recipes.id";
         return $this->query($query, [$category_id]);  
+    }
+
+    public function get_all_recipes() {
+        return $this->query("SELECT * FROM recipes", []);
     }
 }

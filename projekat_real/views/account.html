@@ -1,0 +1,78 @@
+<div class="container rounded bg-white mt-5 mb-5">
+  <div class="row">
+    <div class="col-md-3 border-right">
+      <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+        <img
+          class="rounded-circle mt-5"
+          width="150px"
+          src="img/avatar.jpeg"
+          alt="Avatar"
+        />
+      </div>
+    </div>
+    <!-- Personal Information Form -->
+    <div class="col-md-5 border-right">
+      <div class="p-4 py-5">
+        <form id="account-form">
+          <div class="form-group">
+            <label class="labels">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="labels">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              class="form-control"
+              required
+              disabled
+            />
+          </div>
+          <div class="form-group">
+            <label class="labels">Mobile Number</label>
+            <input
+              id="phone"
+              name="phone"
+              type="text"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="labels">Date Of Birth</label>
+            <input
+              id="dob"
+              name="dob"
+              type="text"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label class="labels">Biography</label>
+            <input
+              id="bio"
+              name="bio"
+              type="text"
+              class="form-control"
+              required
+            />
+          </div>
+          <button
+            id="update-button"
+            class="btn btn-primary profile-button"
+            type="submit"
+            style="background-color: rgb(58, 150, 100); border-color: rgb(58, 150, 100);"
+          >
+            Update Information
+        </form>
+    </div>
+  </div>
+</div>

@@ -74,7 +74,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #118762;
   text-align: left;
   background-color: #fff;
 }
@@ -4570,7 +4570,7 @@ input[type="submit"].btn-block {
 }
 .alert-danger {
   color: #ffffff;
-  background-color: #ffffff;
+  background-color: #f8d7da;
   border-color: #f5c6cb;
 }
 .alert-danger hr {
