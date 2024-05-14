@@ -17,4 +17,8 @@ class RecipeService {
     public function get_recipes_by_category($category_id) {
         return $this->recipe_dao->get_recipes_by_category($category_id);
     }
+
+    public function get_all_recipes(){
+        return $this->recipe_dao->get_all_recipes();
+    }
 }

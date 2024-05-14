@@ -57,10 +57,13 @@
                           <a class="nav-link disabled" href="#contact">Contact</a></li>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link disabled" href="#login">Login</a></li>
+                          <a class="nav-link disabled" id="login-link" href="#login">Login</a></li>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-none" id="account-link">
                           <a class="nav-link disabled" href="#account">Account</a></li>
+                        </li>
+                        <li class="nav-item d-none" id="logout-link">
+                          <a class="nav-link disabled" href="#logout">Log Out</a></li>
                         </li>
                       </ul>
                     </div>
@@ -71,6 +74,8 @@
             </div>
           </header>
           <!-- ##### Header Area End ##### -->
+          
+          <!-- ##### Hero Area Start ##### -->
           <section id="pageContent">
             <main id="spapp" role="main">
                 <section id="home" data-load="home.html">
@@ -88,6 +93,8 @@
                 <section id="signup" data-load="signup.html">
                 </section>
                 <section id="account" data-load="account.html">
+                </section>
+                <section id="logout" data-load="logout.html">
                 </section>
             </main>
         </section>
