@@ -1,0 +1,19 @@
+PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE id = '12'' at line 1 in C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\rest\dao\BaseDao.class.php:83
+Stack trace:
+#0 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\rest\dao\BaseDao.class.php(83): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\rest\dao\UserDao.class.php(21): BaseDao->update('users', '12', Array)
+#2 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\rest\services\UserService.class.php(21): UserDao->update_user('12', Array)
+#3 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\rest\routes\user_routes.php(130): UserService->update('12', Array)
+#4 [internal function]: {closure}()
+#5 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(354): call_user_func_array(Object(Closure), Array)
+#6 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Object(Closure), Array)
+#7 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\Engine.php(544): flight\core\Dispatcher->execute(Object(Closure), Array)
+#8 [internal function]: flight\Engine->_start()
+#9 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(376): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(287): flight\core\Dispatcher->invokeCallable(Array, Array)
+#11 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(131): flight\core\Dispatcher->execute(Array, Array)
+#12 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\core\Dispatcher.php(95): flight\core\Dispatcher->runEvent('start', Array)
+#13 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\Engine.php(113): flight\core\Dispatcher->run('start', Array)
+#14 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\vendor\flightphp\core\flight\Flight.php(119): flight\Engine->__call('start', Array)
+#15 C:\xampp\htdocs\Web-project\WebProgramming\projekat\backend\index.php(22): Flight::__callStatic('start', Array)
+#16 {main}

@@ -1,5 +1,7 @@
 <?php
 
+use OpenApi\Annotations\Delete;
+
 require_once __DIR__ . '/BaseDao.class.php';
 
 class UserDao extends BaseDao {
@@ -21,5 +23,8 @@ class UserDao extends BaseDao {
 
     public function get_all_users() {
         return $this->query("SELECT * FROM users", []);
+    }
+    public function delete_user_by_id($user_id) {
+        $this->execute("DELETE FROM users WHERE id = :id", ["id" => $user_id]);
     }
 }

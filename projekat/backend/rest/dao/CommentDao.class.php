@@ -10,7 +10,7 @@ class CommentDao extends BaseDao {
     public function get_comments() {
         $query = "SELECT *
         FROM comments
-        ORDER BY id DESC;";
+        ORDER BY id DESC LIMIT 5;";
         return $this->query($query, []);  
     }
 

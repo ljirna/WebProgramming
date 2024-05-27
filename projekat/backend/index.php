@@ -11,6 +11,7 @@ Flight::route('/', function () {
   echo 'hello world!';
 });
 
+require 'rest/routes/middleware_routes.php';
 require 'rest/routes/auth_routes.php';
 require 'rest/routes/category_routes.php';
 require 'rest/routes/comment_routes.php';
