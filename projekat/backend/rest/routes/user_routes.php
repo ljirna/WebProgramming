@@ -1,6 +1,5 @@
 <?php
 require_once __DIR__ . '/../services/UserService.class.php';
-require_once __DIR__ . '/../utils.php';
 Flight::set('user_service', new UserService());
 
 /**
