@@ -1,6 +1,5 @@
 $(document).ready(function () {
   console.log("Script loaded!");
-  console.log("Constants", Constants.get_api_base_url());
 
   const currentUser = window.localStorage.getItem("user");
   if (currentUser) {
