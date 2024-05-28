@@ -24,4 +24,7 @@ class UserService {
     public function get_users() {
         return $this->user_dao->get_all_users();
     }
+    public function delete_user($user_id) {
+        $this->user_dao->delete_user_by_id($user_id);
+    }
 }

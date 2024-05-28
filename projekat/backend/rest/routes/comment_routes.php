@@ -9,6 +9,9 @@ Flight::set('comment_service', new CommentService());
  *      path="/comments",
  *      tags={"comments"},
  *      summary="Get all comments",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
  *      @OA\Response(
  *           response=200,
  *           description="Get all comments"
@@ -16,6 +19,7 @@ Flight::set('comment_service', new CommentService());
  * )
  */
 Flight::route('GET /comments', function () {
+    echo "GET comments";
     $data = Flight::get('comment_service')->get_comments();
     Flight::json(
         $data
@@ -26,6 +30,9 @@ Flight::route('GET /comments', function () {
  *      path="/comments",
  *      tags={"comments"},
  *      summary="Post a comment",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
  *      @OA\Response(
  *           response=200,
  *           description="Post a comment"
@@ -42,7 +49,6 @@ Flight::route('GET /comments', function () {
  * )
  */
 Flight::route('POST /comments', function () {
-    authenticate();
     $data = Flight::request()->data->getData();
     $comment = Flight::get('comment_service')->add_comment($data);
     Flight::json(

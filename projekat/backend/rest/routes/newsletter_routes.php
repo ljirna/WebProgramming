@@ -10,6 +10,9 @@ Flight::set('newsletter_service', new NewsletterService());
  *      path="/newsletters",
  *      tags={"newsletters"},
  *      summary="Subscribe to newsletter",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
  *      @OA\Response(
  *           response=200,
  *           description="Subscribe to newsletter"
@@ -25,7 +28,6 @@ Flight::set('newsletter_service', new NewsletterService());
  * )
  */
 Flight::route('POST /newsletters', function () {
-    authenticate();
     $data = Flight::request()->data->getData();
     $newsletter = Flight::get('newsletter_service')->add_newsletters($data);
     Flight::json(

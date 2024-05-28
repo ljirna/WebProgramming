@@ -20,6 +20,9 @@ Flight::route('GET /recipes', function () {
      *      path="/recipes",
      *      tags={"recipes"},
      *      summary="Get all recipes",
+     *      security={
+     *      {"ApiKey": {}}
+     *      },
      *      @OA\Response(
      *           response=200,
      *           description="Get all recipes"

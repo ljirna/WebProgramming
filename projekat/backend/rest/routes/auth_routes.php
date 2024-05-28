@@ -6,6 +6,25 @@
     use Firebase\JWT\Key;
 
     Flight::set('auth_service', new AuthService());
+    /**
+     * @OA\Post(
+     *      path="/login",
+     *      tags={"auth"},
+     *      summary="Login to system",
+     *      @OA\Response(
+     *           response=200,
+     *           description="User data and JWT token"
+     *      ),
+     *      @OA\RequestBody(
+     *          description="User data payload",
+     *          @OA\JsonContent(
+     *             required={"email", "password"},
+     *             @OA\Property(property="email", required=true, type="string", example="mirna@gmail.com"),
+     *             @OA\Property(property="password", required=true, type="string", example="123")
+     *           )
+     *      ),
+     * )
+     */
 
     Flight::route('POST /login', function() {
         $payload = Flight::request()->data->getData();
@@ -26,7 +45,7 @@
 
         $token = JWT::encode(
             $jwt_payload,
-            JWT_SECRET,
+            Config::JWT_SECRET(),
             'HS256'
         );
 

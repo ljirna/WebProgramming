@@ -49,6 +49,9 @@ Flight::route('POST /users', function () {
  *      path="/users/current",
  *      tags={"users"},
  *      summary="Get current user",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
  *      @OA\Response(
  *           response=200,
  *           description="Get current user"
@@ -56,8 +59,8 @@ Flight::route('POST /users', function () {
  * )
  */
 Flight::route('GET /users/current', function () {
-    authenticate();
     $current_user_id = Flight::get('user');
+
     $user = Flight::get('user_service')->get_user_by_id($current_user_id);
     Flight::json(
         $user
@@ -69,6 +72,10 @@ Flight::route('GET /users/current', function () {
  *      path="/user",
  *      tags={"users"},
  *      summary="Get user by id",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
+ *      @OA\Re
  *      @OA\Response(
  *           response=200,
  *           description="User data or false if user does not exist"
@@ -79,7 +86,6 @@ Flight::route('GET /users/current', function () {
 
 Flight::route('GET /user', function () {
     $params = Flight::request()->query;
-
     $user = Flight::get('user_service')->get_user_by_id($params['user_id']);
     Flight::json($user);
 });
@@ -89,6 +95,10 @@ Flight::route('GET /user', function () {
  *      path="/users",
  *      tags={"users"},
  *      summary="Get all users",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
+ *      @OA\Re
  *      @OA\Response(
  *           response=200,
  *           description="Get all users"
@@ -106,6 +116,10 @@ Flight::route('GET /users', function () {
  *      path="/users/me",
  *      tags={"users"},
  *      summary="Update current user information",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
+ *      @OA\Re
  *      @OA\Response(
  *           response=200,
  *           description="Update current user"
@@ -125,12 +139,16 @@ Flight::route('GET /users', function () {
  */
 
 Flight::route('POST /users/me', function () {
-    authenticate();
     $current_user_id = Flight::get('user');
     $data = Flight::request()->data->getData();
-
     $user = Flight::get('user_service')->update($current_user_id, $data);
     Flight::json(
         $user
     );
+});
+
+Flight::route('DELETE /users/current', function () {
+    $current_user_id = Flight::get('user');
+    Flight::get('user_service')->delete_user($current_user_id);
+    Flight::json(['message' => 'User deleted']);
 });

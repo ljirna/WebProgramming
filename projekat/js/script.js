@@ -198,7 +198,7 @@ $(document).ready(function () {
       });
     },
   });
-
+  //Login app route
   app.route({
     view: "login",
     load: "login.html",
@@ -236,6 +236,8 @@ $(document).ready(function () {
               window.location.reload();
             },
             function (error) {
+              console.log("error", error);
+
               $(".alert-danger").show();
             }
           );
@@ -243,7 +245,7 @@ $(document).ready(function () {
       });
     },
   });
-
+  //Signup app route
   app.route({
     view: "signup",
     load: "signup.html",
@@ -349,10 +351,36 @@ $(document).ready(function () {
           },
         });
       });
+      deleteAccount();
     },
   });
   app.run();
 });
+
+function deleteAccount() {
+  $("#delete-button").on("click", function () {
+    const confirmDelete = confirm(
+      "Are you sure you want to delete your account?"
+    );
+    if (confirmDelete) {
+      RestClient.delete(
+        "users/current",
+        {},
+        function (response) {
+          console.log("Account deleted", response);
+          window.localStorage.clear();
+          alert("Account deleted successfully!");
+          window.location.hash = "#home";
+          window.location.reload();
+        },
+        function (error) {
+          console.log("Error deleting account", error);
+          alert("Error deleting account");
+        }
+      );
+    }
+  });
+}
 
 function renderRecipes(data, container_id) {
   const receipePostDiv = document.getElementById(container_id);
