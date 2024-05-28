@@ -8,7 +8,6 @@ if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0
     define('BASE_URL', 'https://clownfish-app-d3b48.ondigitalocean.app/backend/');
 }
 
-
 error_reporting(0);
 
 $openapi = \OpenApi\Generator::scan(['./../../../rest/routes', './'], ['pattern' => '*.php']);
