@@ -2,7 +2,11 @@
 
 require __DIR__ . '/../../../vendor/autoload.php';
 
-define('BASE_URL', 'http://localhost/Web-project/WebProgramming/projekat/backend/');
+if($_SERVER['SERVER_NAME'] == 'localhost' || $_SERVER['SERVER_NAME'] == '127.0.0.1'){
+    define('BASE_URL', 'http://localhost/Web-project/WebProgramming/projekat/backend/');
+}else{
+    define('BASE_URL', 'https://clownfish-app-d3b48.ondigitalocean.app/backend/');
+}
 
 error_reporting(0);
 
