@@ -1,7 +1,5 @@
 <?php
 require_once __DIR__ . '/../services/CommentService.class.php';
-require_once __DIR__ . '/../utils.php';
-
 
 Flight::set('comment_service', new CommentService());
 /**
