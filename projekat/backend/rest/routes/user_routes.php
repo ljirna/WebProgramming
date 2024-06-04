@@ -146,8 +146,26 @@ Flight::route('POST /users/me', function () {
     );
 });
 
+/**
+ * @OA\Delete(
+ *      path="/users/current",
+ *      tags={"users"},
+ *      summary="Delete current user",
+ *      security={
+ *         {"ApiKey": {}}
+ *      },
+ *      @OA\Response(
+ *           response=200,
+ *           description="User deleted"
+ *      ), 
+ *     @OA\Parameter(@OA\Schema(type="number"), in="query", name="user_id", example="1", description="User ID")
+ * )
+ */
+
 Flight::route('DELETE /users/current', function () {
     $current_user_id = Flight::get('user');
     Flight::get('user_service')->delete_user($current_user_id);
     Flight::json(['message' => 'User deleted']);
 });
+
+
